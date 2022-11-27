@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpashScreenActivity">
+    tools:context=".SpashScreenActivity"
+    android:background="@drawable/splash_screen_background">
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="230sp"
+        android:layout_height="230sp"
         android:src="@drawable/icon"
         android:layout_centerInParent="true"
         android:id="@+id/app_icon"
