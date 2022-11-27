@@ -13,6 +13,13 @@
         android:theme="@style/Theme.SmartConnectify"
         tools:targetApi="31">
         <activity
+            android:name=".StartPageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SpashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.SplashScreenTheme">
@@ -21,6 +28,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -28,7 +36,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="false">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
