@@ -14,7 +14,7 @@ class SpashScreenActivity : AppCompatActivity() {
 
         binding.appIcon.alpha=0f
         binding.appIcon.animate().setDuration(2000).alpha(1f).withEndAction{
-            val i = Intent(this, MainActivity::class.java)
+            val i = Intent(this, StartPageActivity::class.java)
             startActivity(i)
             overridePendingTransition(
                 com.google.android.material.R.anim.abc_fade_in,

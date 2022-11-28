@@ -12,5 +12,59 @@
         tools:src="@drawable/doc1"
         android:id="@+id/bgDocImage"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tsrter_page"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Smart Conectify"
+            android:textColor="#4484FE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15sp"
+            android:layout_marginTop="40sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="@string/description"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_marginStart="40sp"
+            android:layout_marginEnd="40sp"
+            android:layout_marginBottom="80sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textSize="17sp"
+            android:textColor="#4484FE"
+            android:layout_marginBottom="40sp"/>
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:gravity="center"
+            android:padding="10sp"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/log_in_button"
+            android:layout_marginBottom="40sp"/>
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

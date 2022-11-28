@@ -2,7 +2,11 @@ package com.example.smartconnectify
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import com.example.smartconnectify.databinding.ActivityStartPageBinding
+import java.util.*
+import kotlin.concurrent.schedule
 
 class StartPageActivity : AppCompatActivity() {
     private lateinit var binding: ActivityStartPageBinding
@@ -12,17 +16,25 @@ class StartPageActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val imageArray = arrayListOf<Int>(R.drawable.doc1,R.drawable.doc2,R.drawable.doc3)
-        var i =0
-        binding.bgDocImage.setImageResource(imageArray[i])
-        binding.bgDocImage.alpha=0f
-        while(true){
-            binding.bgDocImage.animate().setDuration(2000).alpha(1f).withEndAction{
-                i++
-            }
-            if(i==3){
-                i=0
-            }
-            binding.bgDocImage.setImageResource(imageArray[i])
-        }
+        binding.bgDocImage.setImageResource(imageArray[1])
+        val handler = Handler(Looper.getMainLooper())
+        handler.postDelayed({
+            binding.bgDocImage.setImageResource(imageArray[0])
+        }, 3000)
+        handler.postDelayed({
+            binding.bgDocImage.setImageResource(imageArray[1])
+        }, 6000)
+        handler.postDelayed({
+            binding.bgDocImage.setImageResource(imageArray[2])
+        }, 9000)
+        handler.postDelayed({
+            binding.bgDocImage.setImageResource(imageArray[0])
+        }, 12000)
+        handler.postDelayed({
+            binding.bgDocImage.setImageResource(imageArray[1])
+        }, 15000)
+        handler.postDelayed({
+            binding.bgDocImage.setImageResource(imageArray[2])
+        }, 18000)
     }
 }
