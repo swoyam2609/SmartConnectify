@@ -60,6 +60,8 @@
             android:text="Next"
             android:gravity="center"
             android:padding="10sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="15sp"
             android:textSize="17sp"
             android:textColor="#FFFFFF"
             android:background="@drawable/log_in_button"

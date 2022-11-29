@@ -13,6 +13,8 @@ class SpashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.appIcon.alpha=0f
+
+        //Animating the app opening animation
         binding.appIcon.animate().setDuration(2000).alpha(1f).withEndAction{
             val i = Intent(this, StartPageActivity::class.java)
             startActivity(i)

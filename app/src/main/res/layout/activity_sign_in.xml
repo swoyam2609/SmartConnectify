@@ -7,6 +7,7 @@
     tools:context=".SignInActivity"
     android:background="@drawable/splash_screen_background">
 
+<!--    App Icon Image-->
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="230sp"
@@ -18,6 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    Dont't have an account? Sign Up-->
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
@@ -37,6 +39,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/signUpButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15sp"
@@ -47,6 +50,7 @@
 
     </LinearLayout>
 
+<!--    Sign In with google button-->
     <LinearLayout
         android:id="@+id/googleSignIn"
         android:layout_width="150sp"
@@ -78,6 +82,7 @@
 
     </LinearLayout>
 
+<!--    Or Continue with Option-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -91,6 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+<!--    Sign In button-->
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="150sp"
@@ -117,6 +123,7 @@
 
     </LinearLayout>
 
+<!--    email input text input-->
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/emailInput"
         android:layout_width="350sp"
@@ -128,6 +135,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
+<!--    email text view-->
     <TextView
         android:id="@+id/textEmail"
         android:layout_width="330sp"
@@ -142,6 +150,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
+<!--    password text view-->
     <TextView
         android:id="@+id/textPassword"
         android:layout_width="330sp"
@@ -156,6 +165,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailInput" />
 
+<!--    password input text view-->
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/passwordInput"
         android:inputType="textPassword"
