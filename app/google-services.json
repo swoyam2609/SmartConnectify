@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "483620791734",
+    "project_id": "smartconnectify-5620d",
+    "storage_bucket": "smartconnectify-5620d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483620791734:android:8bf08c5fc6a016d75f8d17",
+        "android_client_info": {
+          "package_name": "com.example.smartconnectify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483620791734-i4i88hbl0u4c34m42e61vr2a6fq0ms2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANMv4RRa3nCHzGV0FKPhiBCcoNc-wqJTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483620791734-i4i88hbl0u4c34m42e61vr2a6fq0ms2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

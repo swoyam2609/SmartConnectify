@@ -98,7 +98,7 @@
 
 <!--    Sign In button-->
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/signInButotn"
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30sp"
@@ -127,7 +127,7 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/emailInput"
         android:layout_width="350sp"
-        android:layout_height="wrap_content"
+        android:layout_height="40sp"
         android:layout_marginTop="4dp"
         android:background="@drawable/edit_text_bg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -170,12 +170,13 @@
         android:id="@+id/passwordInput"
         android:inputType="textPassword"
         android:layout_width="350sp"
-        android:layout_height="wrap_content"
+        android:layout_height="40sp"
         android:layout_marginTop="4dp"
         android:background="@drawable/edit_text_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true"
         app:layout_constraintTop_toBottomOf="@+id/textPassword" />
 
 
