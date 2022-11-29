@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "483620791734-8dgmf0gmt78gbclt59ik6a1ib4sfl773.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartconnectify",
+            "certificate_hash": "772b267b68ca96be49181b571c67a726b214e0a2"
+          }
+        },
+        {
           "client_id": "483620791734-i4i88hbl0u4c34m42e61vr2a6fq0ms2c.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -1,14 +1,20 @@
 package com.example.smartconnectify
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.smartconnectify.databinding.ActivitySignInBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthCredential
+import com.google.firebase.auth.GoogleAuthProvider
 
 class SignInActivity : AppCompatActivity() {
     lateinit var binding : ActivitySignInBinding
@@ -49,7 +55,7 @@ class SignInActivity : AppCompatActivity() {
 
         //Sign in with google activity
         binding.googleSignIn.setOnClickListener{
-
+            signInGoogle()
         }
 
 //        Activity of clicking sign up button
@@ -60,7 +66,52 @@ class SignInActivity : AppCompatActivity() {
                 com.google.android.material.R.anim.abc_fade_in,
                 com.google.android.material.R.anim.abc_fade_out)
         }
+    }
+
+    //google sign in function
+    private fun signInGoogle(){
+        val signinIntent = gsc.signInIntent
+        launcher.launch(signinIntent)
+    }
 
 
+    //Launcher Function
+    private val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+        result ->
+                if(result.resultCode== Activity.RESULT_OK){
+                    val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
+                    handleResults(task)
+                }
+    }
+
+
+    //Handleing Results function
+    private fun handleResults(task: Task<GoogleSignInAccount>) {
+        if(task.isSuccessful){
+            val account : GoogleSignInAccount? = task.result
+            if(account != null){
+                updateUI(account)
+            }
+        }
+        else{
+            Toast.makeText(this, task.exception.toString(), Toast.LENGTH_SHORT).show()
+        }
+    }
+
+
+    //Function for updating the final UI
+    private fun updateUI(account: GoogleSignInAccount) {
+        val credentials = GoogleAuthProvider.getCredential(account.idToken,null)
+        firebaseAuth.signInWithCredential(credentials).addOnCompleteListener {
+            if(it.isSuccessful){
+                val i = Intent(this, MainActivity::class.java)
+                startActivity(i)
+                overridePendingTransition(
+                    androidx.appcompat.R.anim.abc_fade_in, androidx.constraintlayout.widget.R.anim.abc_fade_out)
+            }
+            else{
+                Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
