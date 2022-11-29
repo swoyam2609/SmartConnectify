@@ -5,24 +5,25 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.example.smartconnectify.databinding.ActivityStartPage3Binding
 import com.example.smartconnectify.databinding.ActivityStartPageBinding
 import java.util.*
 import kotlin.concurrent.schedule
 
-class StartPageActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityStartPageBinding
+class StartPageActivity3 : AppCompatActivity() {
+    private lateinit var binding: ActivityStartPage3Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityStartPageBinding.inflate(layoutInflater)
+        binding = ActivityStartPage3Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
         //Setting trhe first image and thgen changing the background image at regular intervals
-        binding.bgDocImage.setImageResource(R.drawable.doc1)
+        binding.bgDocImage.setImageResource(R.drawable.doc3)
 
         //Next button clicking activity
         binding.nextButton.setOnClickListener {
-            val i = Intent(this, StartPageActivity2::class.java)
+            val i = Intent(this, SignUpSignInActivity::class.java)
             startActivity(i)
             overridePendingTransition(
                 com.google.android.material.R.anim.abc_fade_in,
