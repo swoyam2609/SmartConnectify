@@ -7,4 +7,46 @@
     tools:context=".SignUpActivity"
     android:background="@drawable/splash_screen_background">
 
+<!--    app Header-->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:orientation="horizontal"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:src="@drawable/app_icon_small" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+<!--    Upload Dp-->
+    <ImageView
+        android:layout_width="180sp"
+        android:layout_height="180sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/circular_image"
+        android:background="@drawable/profile"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
