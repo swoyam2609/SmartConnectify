@@ -270,7 +270,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Yesterday, November 25 2022"
+            android:text="Wednesday, November 18 2022"
             android:textColor="#686868"
             android:textStyle="bold"
             android:layout_marginStart="20dp"/>

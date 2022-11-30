@@ -291,7 +291,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:text="AIIMS Bhubaneswar"
+                    android:text="AMRI Hospital, BBSR"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -302,7 +302,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
-                    android:text="Sijua, Patrapada, Bhubaneswar, Odisha 751019"
+                    android:text="Plot No. 1, Near Jayadev Vatika Park, Khandagiri, Bhubaneswar, Odisha 751019"
                     android:textColor="#686868"
                     android:textStyle="normal" />
 
@@ -362,7 +362,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:text="AIIMS Bhubaneswar"
+                    android:text="Apollo Hospital, BBSR"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -373,7 +373,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
-                    android:text="Sijua, Patrapada, Bhubaneswar, Odisha 751019"
+                    android:text="Plot no, 251, Sainik School Rd, Unit 15, Gajapati Nagar, Bhubaneswar, Odisha 751005"
                     android:textColor="#686868"
                     android:textStyle="normal" />
 
