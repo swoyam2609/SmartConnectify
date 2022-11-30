@@ -15,6 +15,20 @@
         android:theme="@style/Theme.SmartConnectify"
         tools:targetApi="31">
         <activity
+            android:name=".HealthCareSchemeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CommunityActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".HospitalNearbyActivity"
             android:exported="false">
             <meta-data
