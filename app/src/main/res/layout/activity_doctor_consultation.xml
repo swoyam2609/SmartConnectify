@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorConsultationActivity"
+    android:background="@drawable/splash_screen_background">
+
+    <LinearLayout
+        android:id="@+id/ll_topbar_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:orientation="horizontal"
+        android:paddingEnd="20sp"
+        android:paddingStart="20sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/back_button_appoint"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:text="Doctor Consultation"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingEnd="20sp"
+        android:paddingStart="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="7sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_topbar_appoint">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0sp"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:layout_weight="5"
+            android:hint="Search"
+            android:textColorHint="#4484FE"
+            android:textSize="20sp"
+            android:paddingStart="20sp"
+            android:layout_marginEnd="10sp"
+            android:paddingEnd="20sp"
+            android:background="@drawable/search_bg" />
+
+        <ImageView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/sort"
+            android:layout_gravity="end"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/temp1"
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp">
+
+                <LinearLayout
+                    android:id="@+id/cardio"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/prev_test_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/cardio" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Cardio\nSpecialists"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="216 Doctors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dental"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/upcoming_appointment_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/tooth" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Dental\nSpecialists"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="186 Doctors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/temp2"
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp">
+
+                <LinearLayout
+                    android:id="@+id/eye"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/upcoming_appointment_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/eye" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Eye\nSpecialists"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="156 Doctors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/brain"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bmi_report_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/brain" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Brain\nSpecialists"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="235 Doctors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/temp3"
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp">
+
+                <LinearLayout
+                    android:id="@+id/neuro"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bmi_report_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/neoro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Neuro\nSpecialists"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="189 Doctors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/child"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/prev_test_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/child" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Child\nSpecialists"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="145 Doctors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/temp4"
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp">
+
+                <LinearLayout
+                    android:id="@+id/sex"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/upcoming_appointment_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gender" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sex\nSpecialists"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="123 Doctors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/skin"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bmi_report_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/skin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Skin\nSpecialists"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="221 Doctors"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

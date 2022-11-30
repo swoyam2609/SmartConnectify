@@ -29,7 +29,7 @@ class CareActivity : AppCompatActivity() {
         }
 
         binding.doctorConsultation.setOnClickListener {
-            val i = Intent(this, Appointments::class.java)
+            val i = Intent(this, DoctorConsultationActivity::class.java)
             startActivity(i)
             overridePendingTransition(
                 com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out
