@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/splash_screen_background">
 
+
+<!--    App Action Bar-->
     <LinearLayout
         android:id="@+id/ll_topbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingEnd="15sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,250 +49,333 @@
 
     </LinearLayout>
 
-    <LinearLayout
+<!--    Scroll View containing all elements-->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ll_topbar">
 
-        <LinearLayout
-            android:id="@+id/hs_checklist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0sp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:padding="20sp"
-                    android:layout_margin="15sp"
-                    android:background="@drawable/round_corners_1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/injection"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TRAHI"
-                        android:textSize="20sp"
-                        android:layout_marginStart="15sp"
-                        android:layout_marginEnd="15sp"
-                        android:layout_marginBottom="7sp"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="View more"
-                        android:layout_marginBottom="15sp"
-                        android:textColor="#B3B3B3"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0sp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:padding="20sp"
-                    android:layout_marginTop="15sp"
-                    android:layout_marginBottom="15sp"
-                    android:layout_marginEnd="15sp"
-                    android:background="@drawable/round_corners_1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/checkup"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="PAPR"
-                        android:textSize="20sp"
-                        android:layout_marginStart="15sp"
-                        android:layout_marginEnd="15sp"
-                        android:layout_marginBottom="7sp"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="View more"
-                        android:layout_marginBottom="15sp"
-                        android:textColor="#B3B3B3"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0sp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:padding="20sp"
-                    android:layout_margin="15sp"
-                    android:background="@drawable/round_corners_1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/healthbook"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TRAHI"
-                        android:textSize="20sp"
-                        android:layout_marginStart="15sp"
-                        android:layout_marginEnd="15sp"
-                        android:layout_marginBottom="7sp"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="View more"
-                        android:layout_marginBottom="15sp"
-                        android:textColor="#B3B3B3"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
+        <!--    Linear Layout for the rest of elements-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
 
+            android:orientation="vertical"
+            android:padding="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_topbar">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginBottom="15sp"
+                android:layout_marginTop="0sp"
+                android:background="@drawable/bg_hosp_1"
+                app:cardCornerRadius="15sp"
+                app:cardElevation="10sp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="420sp"
+                    android:layout_height="200sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_hosp_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30sp"
+                        android:text="Lorem Ipsum"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25sp"
+                        android:textColor="@color/white"
+                        android:text="Lorem ipsum dolor sit amet consectetur. Proin libero mi dolor velit. Tincidunt et scelerisque tortor mi sit egestas." />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        Linear Layout for all other options-->
             <LinearLayout
+                android:id="@+id/hs_checklist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="Notices"
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:text="See all"
-                    android:layout_marginLeft="230sp"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginEnd="15sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/prev_test_background"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:src="@drawable/prev_test" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0sp"
+                            android:layout_marginBottom="10sp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Previous\nTest"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="View more"
+                            android:textColor="@color/white"
+                            android:textSize="7sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/upcoming_appointment_background"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:src="@drawable/upc_appt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0sp"
+                            android:layout_marginBottom="10sp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Upcoming\nAppointments"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="View more"
+                            android:textColor="@color/white"
+                            android:textSize="7sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginEnd="15sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bmi_report_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bmi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0sp"
+                            android:layout_marginBottom="10sp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="BMI\nReport"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="View more"
+                            android:textColor="@color/white"
+                            android:textSize="7sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </LinearLayout>
 
+            <!--        Linear layout for announcements-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/readmore1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/round_corners_3"
-                    android:layout_margin="15dp"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="15dp">
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Announcements of new schemes by government"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
+                        android:layout_marginLeft="20dp"
+                        android:text="Notices"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
-                        android:textColor="@color/black"
-                        android:textStyle="normal"
-                        android:textSize="15sp"
-                        android:layout_marginBottom="5dp"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginEnd="15dp"
-                        android:paddingStart="20sp"
-                        android:paddingEnd="20sp">
-
-
-                    </LinearLayout>
-
+                        android:layout_marginLeft="230sp"
+                        android:gravity="right"
+                        android:text="See all"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/readmore2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/round_corners_3"
-                    android:layout_margin="15dp"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="15dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Reminders for pending tests and consultations"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="20dp"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
-                        android:textColor="@color/black"
-                        android:textStyle="normal"
-                        android:textSize="15sp"
-                        android:layout_marginBottom="5dp"/>
+                    android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/readmore1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginEnd="15dp"
-                        android:paddingStart="20sp"
-                        android:paddingEnd="20sp">
+                        android:layout_margin="15dp"
+                        android:background="@drawable/round_corners_3"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="15dp">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Announcements of new schemes by government"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="20sp"
+                            android:paddingEnd="20sp">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/readmore2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/round_corners_3"
+                        android:orientation="vertical"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Reminders for pending tests and consultations"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="20sp"
+                            android:paddingEnd="20sp">
+
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -298,7 +385,9 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
+
+
 
 
 
