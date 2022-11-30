@@ -18,5 +18,12 @@ class Appointments : AppCompatActivity() {
             overridePendingTransition(com.google.android.material.R.anim.abc_fade_out, com.google.android.material.R.anim.abc_fade_in)
         }
 
+        binding.backButtonAppoint.setOnClickListener {
+            val i = Intent(this, MainActivity::class.java)
+            startActivity(i)
+            overridePendingTransition(com.google.android.material.R.anim.abc_fade_out, com.google.android.material.R.anim.abc_fade_in)
+            finish()
+        }
+
     }
 }

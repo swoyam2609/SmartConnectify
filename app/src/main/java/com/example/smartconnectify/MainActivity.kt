@@ -17,5 +17,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
             overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
         }
+
+        binding.notificationButton.setOnClickListener {
+            val i = Intent(this, NotificationActivity::class.java)
+            startActivity(i)
+            overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
+
+        }
+
+        binding.upcomingAppButton.setOnClickListener {
+            val i = Intent(this, Appointments::class.java)
+            startActivity(i)
+            overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
+
+        }
     }
 }

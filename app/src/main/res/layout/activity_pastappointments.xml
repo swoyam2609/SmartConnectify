@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@id/ll_topbar_appoint">
 
         <RadioButton
-            android:id="@+id/rbupcoming"
+            android:id="@+id/upcomingApp"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_weight="0.50"
