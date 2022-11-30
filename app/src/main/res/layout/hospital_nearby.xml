@@ -200,7 +200,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="80dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="80dp"
                 android:src="@drawable/hospital"
                 android:layout_gravity="center_vertical"
@@ -208,7 +209,8 @@
                 android:layout_marginStart="10dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="85dp"
                 android:orientation="vertical"
                 android:layout_marginTop="10dp"
@@ -237,24 +239,15 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="50dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="10dp"
                 android:src="@drawable/location" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:orientation="horizontal"
-                android:paddingStart="20sp"
-                android:paddingEnd="20sp">
 
-
-            </LinearLayout>
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -278,7 +271,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="80dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="80dp"
                 android:src="@drawable/hospital"
                 android:layout_gravity="center_vertical"
@@ -286,7 +280,8 @@
                 android:layout_marginStart="10dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="85dp"
                 android:orientation="vertical"
                 android:layout_marginTop="10dp"
@@ -296,7 +291,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:text="SUM Hospital, BBSR"
+                    android:text="AIIMS Bhubaneswar"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -307,7 +302,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
-                    android:text="K8 Kalinga Nagar, Kalinganagar, Bhubaneswar, Odisha"
+                    android:text="Sijua, Patrapada, Bhubaneswar, Odisha 751019"
                     android:textColor="#686868"
                     android:textStyle="normal" />
 
@@ -315,24 +310,15 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="50dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="10dp"
                 android:src="@drawable/location" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:orientation="horizontal"
-                android:paddingStart="20sp"
-                android:paddingEnd="20sp">
 
-
-            </LinearLayout>
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -356,7 +342,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="80dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="80dp"
                 android:src="@drawable/hospital"
                 android:layout_gravity="center_vertical"
@@ -364,7 +351,8 @@
                 android:layout_marginStart="10dp"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="85dp"
                 android:orientation="vertical"
                 android:layout_marginTop="10dp"
@@ -374,7 +362,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:text="AMRI Hospital, BBSR"
+                    android:text="AIIMS Bhubaneswar"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -385,7 +373,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
-                    android:text="Plot No. 1,Jayadev Vatika Park, Khandagiri, Bhubaneswar, Odisha"
+                    android:text="Sijua, Patrapada, Bhubaneswar, Odisha 751019"
                     android:textColor="#686868"
                     android:textStyle="normal" />
 
@@ -393,24 +381,15 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="50dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="10dp"
                 android:src="@drawable/location" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:orientation="horizontal"
-                android:paddingStart="20sp"
-                android:paddingEnd="20sp">
 
-
-            </LinearLayout>
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
