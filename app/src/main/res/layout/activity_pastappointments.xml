@@ -4,6 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pastappointments">
+    tools:context=".Appointments">
+
+    <LinearLayout
+        android:id="@+id/ll_topbar_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/back_button_appoint"
+            android:layout_width="65dp"
+            android:layout_height="68dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:text="My Appointments"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgUnits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="4dp"
+        android:background="@drawable/radio_tab_background"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_topbar_appoint">
+
+        <RadioButton
+            android:id="@+id/rbupcoming"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.50"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="Upcoming"
+            android:textColor="@drawable/text_color_radio_button"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbpast"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.50"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Past"
+            android:textColor="@drawable/text_color_radio_button"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgUnits" />
+
+    <TextView
+        android:id="@+id/tv_appointments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="You don’t have an appointment"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/iv_appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/signInButotn"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:background="@drawable/upcoming_appointment_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        android:paddingStart="25sp"
+        android:paddingEnd="25sp"
+        android:layout_marginTop="15dp"
+        android:elevation="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:text="Book Appointment Now"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,7 @@ class Appointments : AppCompatActivity() {
         binding.rbpast.setOnClickListener {
             val i = Intent(this, pastappointments::class.java)
             startActivity(i)
-            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_in_left)
+            overridePendingTransition(com.google.android.material.R.anim.abc_fade_out, com.google.android.material.R.anim.abc_fade_in)
         }
 
     }
