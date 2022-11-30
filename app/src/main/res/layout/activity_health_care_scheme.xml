@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HealthCareSchemeActivity">
+    tools:context=".HealthCareSchemeActivity"
+    android:background="@drawable/splash_screen_background">
 
     <LinearLayout
         android:id="@+id/ll_topbar_hs"
@@ -50,7 +51,10 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
+                android:layout_marginTop="24dp"
                 android:background="@drawable/round_corners_3"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
@@ -60,6 +64,7 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:paddingEnd="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal">
@@ -81,7 +86,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
                 android:background="@drawable/round_corners_3"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
@@ -91,6 +98,7 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:paddingEnd="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal">
@@ -112,7 +120,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
                 android:background="@drawable/round_corners_3"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
@@ -122,6 +132,7 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:paddingEnd="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal">
@@ -143,7 +154,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
                 android:background="@drawable/round_corners_3"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
@@ -153,6 +166,7 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:paddingEnd="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal">
@@ -174,7 +188,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
                 android:background="@drawable/round_corners_3"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
@@ -184,6 +200,7 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:paddingEnd="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal">
@@ -205,7 +222,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
                 android:background="@drawable/round_corners_3"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
@@ -215,6 +234,7 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:paddingEnd="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal">
@@ -236,7 +256,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
                 android:background="@drawable/round_corners_3"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
@@ -246,6 +268,7 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:paddingEnd="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal">
@@ -267,7 +290,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
                 android:background="@drawable/round_corners_3"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
@@ -277,6 +302,7 @@
                 app:cardElevation="10dp">
 
                 <LinearLayout
+                    android:paddingEnd="20sp"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:orientation="horizontal">

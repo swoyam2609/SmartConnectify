@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Appointments">
+    tools:context=".Appointments"
+    android:background="@drawable/splash_screen_background">
 
     <LinearLayout
         android:id="@+id/ll_topbar_appoint"
