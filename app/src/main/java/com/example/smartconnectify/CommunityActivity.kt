@@ -25,5 +25,11 @@ class CommunityActivity : AppCompatActivity() {
             overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
             finish()
         }
+
+        binding.healthCareScheme.setOnClickListener {
+            val i = Intent(this, HealthCareSchemeActivity::class.java)
+            startActivity(i)
+            overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
+        }
     }
 }
