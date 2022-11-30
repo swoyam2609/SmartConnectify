@@ -9,6 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/doc1"
         android:id="@+id/bgDocImage"/>
 
@@ -40,28 +41,33 @@
             android:textSize="15sp"
             android:gravity="center"
             android:textStyle="normal"
-            android:layout_marginStart="40sp"
-            android:layout_marginEnd="40sp"
-            android:layout_marginBottom="80sp"/>
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="40sp"/>
 
         <TextView
             android:id="@+id/skipButton"
-            android:layout_width="350sp"
+            android:layout_width="match_parent"
             android:gravity="center"
             android:background="@drawable/sign_in_button"
             android:padding="10sp"
             android:paddingTop="15sp"
             android:paddingBottom="15sp"
+            android:layout_marginStart="40sp"
+            android:layout_marginEnd="40sp"
             android:layout_height="wrap_content"
             android:text="Skip"
             android:textSize="17sp"
             android:textColor="#4484FE"
-            android:layout_marginBottom="40sp"/>
+            android:layout_marginBottom="40sp"
+            android:elevation="10sp"/>
 
         <TextView
             android:id="@+id/nextButton"
-            android:layout_width="350sp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40sp"
+            android:layout_marginEnd="40sp"
             android:text="Next"
             android:gravity="center"
             android:padding="10sp"
@@ -70,7 +76,8 @@
             android:textSize="17sp"
             android:textColor="#FFFFFF"
             android:background="@drawable/log_in_button"
-            android:layout_marginBottom="40sp"/>
+            android:layout_marginBottom="40sp"
+            android:elevation="10sp"/>
 
 
     </LinearLayout>
