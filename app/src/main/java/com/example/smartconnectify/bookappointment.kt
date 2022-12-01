@@ -23,8 +23,6 @@ class bookappointment : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bookappointment)
 
-
-
         recyclerView = findViewById(R.id.search_list)
         noSearchResultsFoundText = findViewById(R.id.no_search_results_found_text)
 
@@ -60,7 +58,7 @@ class bookappointment : AppCompatActivity() {
         // Loop through each item in list
         for (currentSport in docsList) {
             // Before checking string matching convert string to lower case.
-            if (currentSport.name.toLowerCase(Locale.getDefault()).contains(filterQuery)) {
+            if (currentSport.speciality.toLowerCase(Locale.getDefault()).contains(filterQuery)) {
                 // If the match is success, add item to list.
                 filteredList.add(currentSport)
             }
