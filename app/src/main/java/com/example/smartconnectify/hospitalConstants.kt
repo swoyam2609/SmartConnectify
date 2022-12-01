@@ -1,7 +1,7 @@
 package com.example.smartconnectify
 
 object hospitalConstants {
-    
+
     var thisUser : hospital? = null
 
     fun getUsers() : ArrayList<hospital>{
