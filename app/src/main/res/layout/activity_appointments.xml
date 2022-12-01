@@ -114,6 +114,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/call1"
                 android:layout_width="0sp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_vertical"
@@ -189,6 +190,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/call2"
                 android:layout_width="0sp"
                 android:layout_height="50dp"
                 android:layout_gravity="center_vertical"
