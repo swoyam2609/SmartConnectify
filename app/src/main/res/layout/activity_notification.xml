@@ -27,6 +27,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10sp"
             android:text="Notifications"
+            android:fontFamily="@font/dmsans_bold"
             android:textSize="25sp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
@@ -57,6 +58,7 @@
                     android:layout_height="wrap_content"
                     android:text="Today, November 25 2022"
                     android:textColor="#686868"
+                    android:fontFamily="@font/dmsans_bold"
                     android:textStyle="bold"
                     android:layout_marginStart="20dp"/>
 
@@ -93,6 +95,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_bold"
                                 android:textSize="15dp"
                                 android:textStyle="bold"
                                 android:gravity="start"/>
@@ -101,6 +104,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:text="Lorem ipsum dolor sit amet consectetur. Amet ultricies sit lectus egestas eget ipsum turpis. Lorem ornare ornare donec justo scelerisque."
                                 android:textColor="#686868"
                                 android:textStyle="normal"
@@ -155,6 +159,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_bold"
                                 android:textSize="15dp"
                                 android:textStyle="bold"
                                 android:gravity="start"/>
@@ -165,6 +170,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:text="Lorem ipsum dolor sit amet consectetur. Amet ultricies sit lectus egestas eget ipsum turpis. Lorem ornare ornare donec justo scelerisque."
                                 android:textColor="#686868"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:textStyle="normal"
                                 android:gravity="left"/>
                         </LinearLayout>
@@ -198,6 +204,7 @@
                     android:layout_height="wrap_content"
                     android:text="Today, November 25 2022"
                     android:textColor="#686868"
+                    android:fontFamily="@font/dmsans_bold"
                     android:textStyle="bold"
                     android:layout_marginStart="20dp"/>
 
@@ -236,6 +243,7 @@
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
                                 android:textSize="15dp"
+                                android:fontFamily="@font/dmsans_bold"
                                 android:textStyle="bold"
                                 android:gravity="start"/>
 
@@ -245,6 +253,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:text="Lorem ipsum dolor sit amet consectetur. Amet ultricies sit lectus egestas eget ipsum turpis. Lorem ornare ornare donec justo scelerisque."
                                 android:textColor="#686868"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:textStyle="normal"
                                 android:gravity="left"/>
                         </LinearLayout>
@@ -277,6 +286,7 @@
                     android:layout_height="wrap_content"
                     android:text="Today, November 25 2022"
                     android:textColor="#686868"
+                    android:fontFamily="@font/dmsans_bold"
                     android:textStyle="bold"
                     android:layout_marginStart="20dp"/>
 
@@ -314,6 +324,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_bold"
                                 android:textSize="15dp"
                                 android:textStyle="bold"
                                 android:gravity="start"/>
@@ -322,6 +333,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:text="Lorem ipsum dolor sit amet consectetur. Amet ultricies sit lectus egestas eget ipsum turpis. Lorem ornare ornare donec justo scelerisque."
                                 android:textColor="#686868"
                                 android:textStyle="normal"
@@ -377,6 +389,7 @@
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
                                 android:textSize="15dp"
+                                android:fontFamily="@font/dmsans_bold"
                                 android:textStyle="bold"
                                 android:gravity="start"/>
 
@@ -386,6 +399,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:text="Lorem ipsum dolor sit amet consectetur. Amet ultricies sit lectus egestas eget ipsum turpis. Lorem ornare ornare donec justo scelerisque."
                                 android:textColor="#686868"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:textStyle="normal"
                                 android:gravity="left"/>
                         </LinearLayout>

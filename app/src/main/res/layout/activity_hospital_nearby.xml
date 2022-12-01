@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="10sp"
-
+            android:fontFamily="@font/dmsans_bold"
             android:text="Hospitals Nearby"
             android:textColor="@color/black"
             android:textSize="25sp"
@@ -45,6 +45,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:fontFamily="@font/dmsans_regular"
             android:layout_marginTop="10dp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25sp"
@@ -69,6 +70,7 @@
         app:layout_constraintTop_toBottomOf="@id/ll_search_hospital">
 
         <RadioButton
+            android:fontFamily="@font/dmsans_medium"
             android:id="@+id/rball"
             android:layout_width="0dp"
             android:layout_height="35dp"
@@ -83,6 +85,7 @@
 
         <RadioButton
             android:id="@+id/rbnearby"
+            android:fontFamily="@font/dmsans_medium"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_weight="0.50"
@@ -97,6 +100,7 @@
         <RadioButton
             android:id="@+id/rbprivate"
             android:layout_width="0dp"
+            android:fontFamily="@font/dmsans_medium"
             android:layout_height="35dp"
             android:layout_weight="0.50"
             android:button="@null"
@@ -109,6 +113,7 @@
         <RadioButton
             android:id="@+id/rbgovt"
             android:layout_width="0dp"
+            android:fontFamily="@font/dmsans_medium"
             android:layout_height="35dp"
             android:layout_weight="0.50"
             android:button="@null"
@@ -136,6 +141,7 @@
             android:id="@+id/rb5"
             android:layout_width="0dp"
             android:layout_height="35dp"
+            android:fontFamily="@font/dmsans_medium"
             android:layout_weight="0.50"
             android:button="@null"
             android:checked="false"
@@ -148,6 +154,7 @@
         <RadioButton
             android:id="@+id/rb10"
             android:layout_width="0dp"
+            android:fontFamily="@font/dmsans_medium"
             android:layout_height="35dp"
             android:layout_weight="0.50"
             android:background="@drawable/radio_button_selector"
@@ -161,6 +168,7 @@
         <RadioButton
             android:id="@+id/rb15"
             android:layout_width="0dp"
+            android:fontFamily="@font/dmsans_medium"
             android:layout_height="35dp"
             android:layout_weight="0.50"
             android:button="@null"
@@ -174,6 +182,7 @@
             android:id="@+id/rb20"
             android:layout_width="0dp"
             android:layout_height="35dp"
+            android:fontFamily="@font/dmsans_medium"
             android:layout_weight="0.50"
             android:button="@null"
             android:checked="false"
@@ -224,6 +233,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="start"
                     android:text="AIIMS Bhubaneswar"
+                    android:fontFamily="@font/dmsans_bold"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -234,6 +244,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
+                    android:fontFamily="@font/dmsans_regular"
                     android:text="Sijua, Patrapada, Bhubaneswar, Odisha 751019"
                     android:textColor="#686868"
                     android:textStyle="normal" />
@@ -295,6 +306,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="start"
                     android:text="AMRI Hospital, BBSR"
+                    android:fontFamily="@font/dmsans_bold"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -305,6 +317,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
+                    android:fontFamily="@font/dmsans_regular"
                     android:text="Plot No. 1, Near Jayadev Vatika Park, Khandagiri, Bhubaneswar, Odisha 751019"
                     android:textColor="#686868"
                     android:textStyle="normal" />
@@ -366,6 +379,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="start"
                     android:text="Apollo Hospital, BBSR"
+                    android:fontFamily="@font/dmsans_bold"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -376,6 +390,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
+                    android:fontFamily="@font/dmsans_regular"
                     android:text="Plot no, 251, Sainik School Rd, Unit 15, Gajapati Nagar, Bhubaneswar, Odisha 751005"
                     android:textColor="#686868"
                     android:textStyle="normal" />
@@ -439,6 +454,7 @@
                     android:text="SUM Ultimate, BBSR"
                     android:textColor="@color/black"
                     android:textSize="15dp"
+                    android:fontFamily="@font/dmsans_bold"
                     android:textStyle="bold"
                     android:layout_marginBottom="5dp"/>
 
@@ -447,8 +463,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
+                    android:fontFamily="@font/dmsans_regular"
                     android:text="K8 Kalinga Nagar, Kalinganagar, Bhubaneswar, Odisha 751003
-
 "
                     android:textColor="#686868"
                     android:textStyle="normal" />
