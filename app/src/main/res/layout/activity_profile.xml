@@ -76,6 +76,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10sp"
             android:text="Profile"
+            android:fontFamily="@font/dmsans_bold"
             android:textSize="30sp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
@@ -120,6 +121,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="start"
                     android:text="Dr. Lorem ipsum "
+                    android:fontFamily="@font/dmsans_bold"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -138,6 +140,7 @@
                         android:layout_weight="3"
                         android:layout_height="wrap_content"
                         android:text="01 . 05 . 2000"
+                        android:fontFamily="@font/dmsans_regular"
                         android:layout_gravity="center"/>
                 </LinearLayout>
                 <LinearLayout
@@ -154,6 +157,7 @@
                         android:layout_weight="4"
                         android:layout_height="wrap_content"
                         android:text="+919876543210"
+                        android:fontFamily="@font/dmsans_regular"
                         android:layout_gravity="center"/>
                 </LinearLayout>
             </LinearLayout>
@@ -201,6 +205,7 @@
                         android:layout_weight="4"
                         android:layout_height="wrap_content"
                         android:text="Medical History"
+                        android:fontFamily="@font/dmsans_medium"
                         android:textColor="@color/black"
                         android:layout_gravity="center"/>
                 </LinearLayout>
@@ -210,6 +215,7 @@
                     android:layout_marginTop="10dp"
                     android:textColor="@color/black"
                     android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/dmsans_medium"
                     android:text="Check your All Medical History"/>
             </LinearLayout>
             <ImageView
@@ -255,6 +261,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/dmsans_bold"
                 android:text="Health Care Schemes"
                 android:textColor="#4484FE"
                 android:textSize="20sp"
@@ -306,6 +313,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
                 android:text="Personal Information"
+                android:fontFamily="@font/dmsans_bold"
                 android:textColor="#4484FE"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -356,6 +364,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
                 android:text="Profile Settings"
+                android:fontFamily="@font/dmsans_bold"
                 android:textColor="#4484FE"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -407,6 +416,7 @@
                 android:layout_marginLeft="20dp"
                 android:text="Logout"
                 android:textColor="#4484FE"
+                android:fontFamily="@font/dmsans_bold"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="10sp"
+            android:fontFamily="@font/dmsans_bold"
             android:text="My Appointments"
             android:textSize="25sp"
             android:textColor="@color/black"
@@ -54,6 +55,7 @@
             android:button="@null"
             android:checked="false"
             android:gravity="center"
+            android:fontFamily="@font/dmsans_medium"
             android:text="Upcoming"
             android:textColor="@drawable/text_color_radio_button"
             android:textSize="16sp"
@@ -67,6 +69,7 @@
             android:background="@drawable/radio_button_selector"
             android:button="@null"
             android:checked="true"
+            android:fontFamily="@font/dmsans_medium"
             android:gravity="center"
             android:text="Past"
             android:textColor="@drawable/text_color_radio_button"
@@ -87,6 +90,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25sp"
             android:layout_weight="2"
+            android:fontFamily="@font/dmsans_medium"
             android:background="@drawable/search_bg"
             android:gravity="center"
             android:hint="Search"
@@ -115,6 +119,7 @@
             android:layout_height="wrap_content"
             android:text="Yesterday, November 25 2022"
             android:textColor="#686868"
+            android:fontFamily="@font/dmsans_bold"
             android:textStyle="bold"
             android:layout_marginStart="20dp"/>
 
@@ -155,6 +160,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="start"
                         android:text="Dr. Lorem ipsum "
+                        android:fontFamily="@font/dmsans_medium"
                         android:textColor="@color/black"
                         android:textSize="15dp"
                         android:textStyle="bold"
@@ -165,6 +171,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:gravity="left"
+                        android:fontFamily="@font/dmsans_regular"
                         android:text="Voice call.Completed"
                         android:textColor="#686868"
                         android:textStyle="normal" />
@@ -172,6 +179,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
                         android:text="1 : 00 - 1 : 20 PM" />
                 </LinearLayout>
 
@@ -225,6 +233,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="start"
                         android:text="Dr. Lorem ipsum "
+                        android:fontFamily="@font/dmsans_bold"
                         android:textColor="@color/black"
                         android:textSize="15dp"
                         android:textStyle="bold"
@@ -235,6 +244,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:gravity="left"
+                        android:fontFamily="@font/dmsans_regular"
                         android:text="Voice call.Completed"
                         android:textColor="#686868"
                         android:textStyle="normal" />
@@ -242,7 +252,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1 : 00 - 1 : 20 PM" />
+                        android:text="1 : 00 - 1 : 20 PM"
+                        android:fontFamily="@font/dmsans_regular"/>
                 </LinearLayout>
 
                 <ImageView
@@ -272,6 +283,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Wednesday, November 18 2022"
+            android:fontFamily="@font/dmsans_bold"
             android:textColor="#686868"
             android:textStyle="bold"
             android:layout_marginStart="20dp"/>
@@ -313,6 +325,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="start"
                         android:text="Dr. Lorem ipsum "
+                        android:fontFamily="@font/dmsans_bold"
                         android:textColor="@color/black"
                         android:textSize="15dp"
                         android:textStyle="bold"
@@ -324,12 +337,14 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="left"
                         android:text="Voice call.Completed"
+                        android:fontFamily="@font/dmsans_regular"
                         android:textColor="#686868"
                         android:textStyle="normal" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_regular"
                         android:text="1 : 00 - 1 : 20 PM" />
                 </LinearLayout>
 

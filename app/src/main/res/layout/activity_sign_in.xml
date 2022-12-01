@@ -37,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't have an account ?"
+            android:fontFamily="@font/dmsans_bold"
             android:textColor="#949494"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15sp"
             android:text="Sign Up"
+            android:fontFamily="@font/dmsans_bold"
             android:textColor="#4484FE"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -80,6 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="7sp"
             android:text="Google"
+            android:fontFamily="@font/dmsans_bold"
             android:textColor="#000000"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -92,6 +95,7 @@
         android:layout_height="wrap_content"
         android:text="Or Continue with"
         android:textColor="@color/black"
+        android:fontFamily="@font/dmsans_bold"
         android:textSize="12sp"
         android:textStyle="bold"
         android:id="@+id/textView"
@@ -126,6 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="7sp"
             android:text="Sign In"
+            android:fontFamily="@font/dmsans_bold"
             android:textColor="#ffffff"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -154,6 +159,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email*"
+        android:fontFamily="@font/dmsans_bold"
         android:layout_marginTop="56dp"
         android:layout_marginStart="45sp"
         android:layout_marginEnd="45sp"
@@ -171,6 +177,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Password*"
+        android:fontFamily="@font/dmsans_bold"
         android:layout_marginTop="15dp"
         android:layout_marginStart="45sp"
         android:layout_marginEnd="45sp"
