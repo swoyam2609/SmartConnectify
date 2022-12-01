@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.smartconnectify.databinding.ActivitySignInBinding
+import com.example.smartconnectify.userConst.getUsers
+import com.example.smartconnectify.userConst.thisUser
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -36,6 +38,11 @@ class SignInActivity : AppCompatActivity() {
             if(email.isNotEmpty() && password.isNotEmpty()){
                 firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if(it.isSuccessful){
+                        for( i in getUsers()){
+                            if(i.Email==email){
+                                thisUser=i
+                            }
+                        }
                         val i = Intent(this, MainActivity::class.java)
                         startActivity(i)
                         overridePendingTransition(
