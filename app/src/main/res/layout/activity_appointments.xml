@@ -29,6 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10sp"
             android:text="My Appointments"
+            android:fontFamily="@font/dmsans_bold"
             android:textSize="25sp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
@@ -39,6 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="December 12 2022"
+        android:fontFamily="@font/dmsans_bold"
         android:textColor="#686868"
         android:textStyle="bold"
         android:paddingEnd="20sp"
@@ -89,22 +91,25 @@
                     android:layout_marginBottom="10dp"
                     android:gravity="start"
                     android:text="Dr. Lorem ipsum "
+                    android:fontFamily="@font/dmsans_bold"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="149dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
                     android:text="in-Person Appointment"
+                    android:fontFamily="@font/dmsans_regular"
                     android:textColor="#686868"
                     android:textStyle="normal" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
                     android:text="5 : 00 PM - 7 : 20 PM" />
             </LinearLayout>
 
@@ -161,21 +166,24 @@
                     android:layout_marginBottom="10dp"
                     android:gravity="start"
                     android:text="Dr. Lorem ipsum "
+                    android:fontFamily="@font/dmsans_bold"
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="149dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
+                    android:fontFamily="@font/dmsans_regular"
                     android:text="Online Consultancy"
                     android:textColor="#686868"
                     android:textStyle="normal" />
 
                 <TextView
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
                     android:layout_height="wrap_content"
                     android:text="1 : 00 - 1 : 20 PM" />
             </LinearLayout>
@@ -215,6 +223,7 @@
             android:checked="true"
             android:gravity="center"
             android:text="Upcoming"
+            android:fontFamily="@font/dmsans_medium"
             android:textColor="@drawable/text_color_radio_button"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -229,6 +238,7 @@
             android:checked="false"
             android:gravity="center"
             android:text="Past"
+            android:fontFamily="@font/dmsans_medium"
             android:textColor="@drawable/text_color_radio_button"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -237,7 +247,7 @@
 
     <LinearLayout
         android:id="@+id/signInButotn"
-        android:layout_width="250sp"
+        android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40sp"
         android:background="@drawable/upcoming_appointment_background"
@@ -253,10 +263,12 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
+            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="7sp"
             android:text="Book New Appointment"
+            android:fontFamily="@font/dmsans_bold"
             android:textColor="#ffffff"
             android:textSize="17sp"
             android:textStyle="bold" />

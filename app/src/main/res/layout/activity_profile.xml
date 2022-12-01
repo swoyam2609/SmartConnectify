@@ -39,7 +39,7 @@
         <ImageView
             android:layout_width="0sp"
             android:layout_weight="1.5"
-            android:src="@drawable/home_icon_large"
+            android:src="@drawable/profile_icon_large"
             android:layout_height="wrap_content"/>
 
         <ImageView

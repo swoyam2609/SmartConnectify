@@ -7,10 +7,13 @@
     tools:context=".StartPageActivity">
 
     <ImageView
+        android:id="@+id/bgDocImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:src="@drawable/doc1"
-        android:id="@+id/bgDocImage"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/doc1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,59 +21,69 @@
         android:background="@drawable/tsrter_page"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="15sp"
+            android:fontFamily="@font/dmsans_bold"
             android:padding="10sp"
             android:text="Smart Conectify"
             android:textColor="#4484FE"
             android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="15sp"
-            android:layout_marginTop="40sp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40sp"
+            android:layout_marginEnd="40sp"
+            android:layout_marginBottom="40sp"
+            android:fontFamily="@font/dmsans_medium"
+            android:gravity="center"
             android:padding="10sp"
             android:text="@string/description"
             android:textColor="#000000"
             android:textSize="15sp"
-            android:gravity="center"
-            android:textStyle="normal"
-            android:layout_marginStart="40sp"
-            android:layout_marginEnd="40sp"
-            android:layout_marginBottom="80sp"/>
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/skipButton"
-            android:layout_width="350sp"
-            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="40sp"
             android:background="@drawable/sign_in_button"
+            android:fontFamily="@font/dmsans_regular"
+            android:gravity="center"
             android:padding="10sp"
             android:paddingTop="15sp"
             android:paddingBottom="15sp"
-            android:layout_height="wrap_content"
             android:text="Skip"
-            android:textSize="17sp"
             android:textColor="#4484FE"
-            android:layout_marginBottom="40sp"/>
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/nextButton"
-            android:layout_width="350sp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Next"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="40sp"
+            android:background="@drawable/log_in_button"
+            android:fontFamily="@font/dmsans_regular"
             android:gravity="center"
             android:padding="10sp"
             android:paddingTop="15sp"
             android:paddingBottom="15sp"
-            android:textSize="17sp"
+            android:text="Next"
             android:textColor="#FFFFFF"
-            android:background="@drawable/log_in_button"
-            android:layout_marginBottom="40sp"/>
+            android:textSize="17sp" />
 
 
     </LinearLayout>

@@ -22,29 +22,34 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="87dp"
+            android:layout_width="0sp"
+            android:layout_weight="1"
             android:layout_height="50dp"
             android:src="@drawable/telemedicine" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="3"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:gravity="center"
             android:text="Smart Connectify"
+            android:fontFamily="@font/dmsans_medium"
             android:textColor="#4484FE"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/notificationButton"
-            android:layout_width="50dp"
+            android:layout_width="0sp"
+            android:layout_weight="1"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:src="@drawable/bell" />
 
         <ImageView
-            android:layout_width="50dp"
+            android:layout_width="0sp"
+            android:layout_weight="1"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:src="@drawable/heart" />
@@ -101,10 +106,12 @@
                     android:padding="15sp">
 
                     <TextView
+                        android:fontFamily="@font/dmsans_bold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30sp"
                         android:text="Lorem Ipsum"
+                        android:textSize="30sp"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -112,6 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="25sp"
+                        android:fontFamily="@font/dmsans_regular"
                         android:text="Lorem ipsum dolor sit amet consectetur. Proin libero mi dolor velit. Tincidunt et scelerisque tortor mi sit egestas."
                         android:textColor="@color/white" />
 
@@ -139,7 +147,7 @@
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15sp"
-                        android:layout_marginEnd="15sp"
+                        android:layout_marginEnd="5sp"
                         android:layout_weight="1"
                         android:background="@drawable/prev_test_background"
                         android:gravity="center"
@@ -160,9 +168,10 @@
                             android:layout_marginBottom="10sp"
                             android:layout_weight="1"
                             android:gravity="center"
+                            android:fontFamily="@font/dmsans_regular"
                             android:text="Previous\nTest"
                             android:textColor="@color/white"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -171,6 +180,7 @@
                             android:layout_marginBottom="5sp"
                             android:layout_weight="0.5"
                             android:gravity="center"
+                            android:fontFamily="@font/dmsans_regular"
                             android:text="View more"
                             android:textColor="@color/white"
                             android:textSize="7sp"
@@ -181,12 +191,14 @@
                     <LinearLayout
                         android:id="@+id/upcomingAppButton"
                         android:layout_width="0sp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/upcoming_appointment_background"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="10sp">
+                        android:padding="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="10sp">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -201,10 +213,11 @@
                             android:layout_height="0sp"
                             android:layout_marginBottom="10sp"
                             android:layout_weight="1"
+                            android:fontFamily="@font/dmsans_regular"
                             android:gravity="center"
                             android:text="Upcoming\nAppointments"
                             android:textColor="@color/white"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -213,6 +226,7 @@
                             android:layout_marginBottom="5sp"
                             android:layout_weight="0.5"
                             android:gravity="center"
+                            android:fontFamily="@font/dmsans_regular"
                             android:text="View more"
                             android:textColor="@color/white"
                             android:textSize="7sp"
@@ -223,7 +237,7 @@
                     <LinearLayout
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="15sp"
+                        android:layout_marginStart="5sp"
                         android:layout_marginEnd="15sp"
                         android:layout_weight="1"
                         android:background="@drawable/bmi_report_bg"
@@ -245,9 +259,10 @@
                             android:layout_marginBottom="10sp"
                             android:layout_weight="1"
                             android:gravity="center"
+                            android:fontFamily="@font/dmsans_regular"
                             android:text="BMI\nReport"
                             android:textColor="@color/white"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -256,6 +271,7 @@
                             android:layout_marginBottom="5sp"
                             android:layout_weight="0.5"
                             android:gravity="center"
+                            android:fontFamily="@font/dmsans_regular"
                             android:text="View more"
                             android:textColor="@color/white"
                             android:textSize="7sp"
@@ -286,6 +302,7 @@
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:text="Notices"
+                        android:fontFamily="@font/dmsans_bold"
                         android:textColor="@color/black"
                         android:gravity="left"
                         android:textSize="20sp"
@@ -296,6 +313,7 @@
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:gravity="right"
+                        android:fontFamily="@font/dmsans_regular"
                         android:text="See all"
                         android:textColor="#4484FE"
                         android:textSize="20sp"
@@ -331,6 +349,7 @@
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"
+                                android:fontFamily="@font/dmsans_medium"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -339,6 +358,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:textSize="15sp"
                                 android:textStyle="normal" />
 
@@ -382,6 +402,7 @@
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"
+                                android:fontFamily="@font/dmsans_medium"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -390,6 +411,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:textSize="15sp"
                                 android:textStyle="normal" />
 
@@ -433,6 +455,7 @@
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"
+                                android:fontFamily="@font/dmsans_medium"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -441,6 +464,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:textSize="15sp"
                                 android:textStyle="normal" />
 
@@ -484,6 +508,7 @@
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
                                 android:textSize="20dp"
+                                android:fontFamily="@font/dmsans_medium"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -493,6 +518,7 @@
                                 android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:textStyle="normal" />
 
                             <LinearLayout
@@ -534,6 +560,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_medium"
                                 android:textSize="20dp"
                                 android:textStyle="bold" />
 
@@ -543,6 +570,7 @@
                                 android:layout_marginBottom="5dp"
                                 android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:textSize="15sp"
                                 android:textStyle="normal" />
 
@@ -583,6 +611,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Announcements of new schemes by government"
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_medium"
                                 android:textSize="20dp"
                                 android:textStyle="bold" />
 
@@ -590,6 +619,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/dmsans_regular"
                                 android:text=" A complete IoT server for LoRaWAN IoT projects: node-red + influxdb + grafana + ssl + let's encrypt using dock..."
                                 android:textColor="@color/black"
                                 android:textSize="15sp"

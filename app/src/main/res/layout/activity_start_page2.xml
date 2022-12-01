@@ -19,65 +19,69 @@
         android:background="@drawable/tsrter_page"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="15sp"
+            android:fontFamily="@font/dmsans_bold"
             android:padding="10sp"
             android:text="Smart Conectify"
             android:textColor="#4484FE"
             android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="15sp"
-            android:layout_marginTop="20sp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40sp"
+            android:layout_marginEnd="40sp"
+            android:layout_marginBottom="40sp"
+            android:fontFamily="@font/dmsans_medium"
+            android:gravity="center"
             android:padding="10sp"
             android:text="@string/description"
             android:textColor="#000000"
             android:textSize="15sp"
-            android:gravity="center"
-            android:textStyle="normal"
-            android:layout_marginStart="30sp"
-            android:layout_marginEnd="30sp"
-            android:layout_marginBottom="30sp"/>
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/skipButton"
             android:layout_width="match_parent"
-            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="40sp"
             android:background="@drawable/sign_in_button"
+            android:fontFamily="@font/dmsans_regular"
+            android:gravity="center"
             android:padding="10sp"
             android:paddingTop="15sp"
             android:paddingBottom="15sp"
-            android:layout_marginStart="40sp"
-            android:layout_marginEnd="40sp"
-            android:layout_height="wrap_content"
             android:text="Skip"
-            android:textSize="17sp"
             android:textColor="#4484FE"
-            android:layout_marginBottom="30sp"
-            android:elevation="10sp"/>
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/nextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40sp"
-            android:layout_marginEnd="40sp"
-            android:text="Next"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="40sp"
+            android:background="@drawable/log_in_button"
+            android:fontFamily="@font/dmsans_regular"
             android:gravity="center"
             android:padding="10sp"
             android:paddingTop="15sp"
             android:paddingBottom="15sp"
-            android:textSize="17sp"
+            android:text="Next"
             android:textColor="#FFFFFF"
-            android:background="@drawable/log_in_button"
-            android:layout_marginBottom="40sp"
-            android:elevation="10sp"/>
+            android:textSize="17sp" />
 
 
     </LinearLayout>

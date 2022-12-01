@@ -74,6 +74,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10sp"
             android:text="Community"
+            android:fontFamily="@font/dmsans_bold"
             android:textSize="25sp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
@@ -105,6 +106,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
                 android:text="Connect with a Doctor"
+                android:fontFamily="@font/dmsans_bold"
                 android:textColor="#4484FE"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -152,11 +154,12 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="4"
+                android:layout_weight="8"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
                 android:text="Health Care Schemes"
+                android:fontFamily="@font/dmsans_bold"
                 android:textColor="#4484FE"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -195,9 +198,10 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="5"
+                android:layout_weight="8"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:fontFamily="@font/dmsans_bold"
                 android:layout_marginLeft="20dp"
                 android:text="Emergency Helpline Numbers"
                 android:textColor="#4484FE"
@@ -242,6 +246,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
                 android:text="FAQs"
+                android:fontFamily="@font/dmsans_bold"
                 android:textColor="#4484FE"
                 android:textSize="20sp"
                 android:textStyle="bold" />
