@@ -248,6 +248,7 @@
         app:cardElevation="10dp">
 
         <LinearLayout
+            android:id="@+id/healthCareScheme"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal">
@@ -401,6 +402,7 @@
         app:cardElevation="10dp">
 
         <LinearLayout
+            android:id="@+id/logOutButton"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal">
