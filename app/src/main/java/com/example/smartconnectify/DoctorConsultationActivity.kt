@@ -18,5 +18,12 @@ class DoctorConsultationActivity : AppCompatActivity() {
             overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
             finish()
         }
+
+        binding.button.setOnClickListener {
+            val i = Intent(this, bookappointment::class.java)
+            startActivity(i)
+            overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
+            finish()
+        }
     }
 }

@@ -38,52 +38,18 @@
             android:textStyle="bold"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/search_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingEnd="20sp"
-        android:paddingStart="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="7sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ll_topbar_appoint">
-
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="0sp"
-            android:layout_height="60sp"
-            android:layout_margin="10sp"
-            android:layout_weight="5"
-            android:hint="Search"
-            android:fontFamily="@font/dmsans_regular"
-            android:textColorHint="#4484FE"
-            android:textSize="20sp"
-            android:paddingStart="20sp"
-            android:layout_marginEnd="10sp"
-            android:paddingEnd="20sp"
-            android:background="@drawable/search_bg" />
-
-        <ImageView
-            android:layout_width="0sp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:src="@drawable/sort"
-            android:layout_gravity="end"/>
-
-
-    </LinearLayout>
-
     <ScrollView
+
         android:layout_width="match_parent"
         android:layout_height="650dp"
         android:orientation="vertical"
         android:layout_marginBottom="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_bar">
+        app:layout_constraintTop_toBottomOf="@+id/ll_topbar_appoint">
 
         <LinearLayout
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">

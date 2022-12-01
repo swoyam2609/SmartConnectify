@@ -65,6 +65,7 @@
                     android:layout_weight="1"
                     android:layout_marginBottom="10dp"
                     android:gravity="left"
+                    android:layout_marginStart="30sp"
                     android:text="Cardio Specialist"
                     android:fontFamily="@font/dmsans_regular"
                     android:textColor="#686868"
