@@ -253,6 +253,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/aiimsLoc"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="50dp"
@@ -326,6 +327,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/amriLoc"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="50dp"
@@ -399,6 +401,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/apoloLoc"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="50dp"
@@ -473,6 +476,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/sumLoc"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="50dp"
