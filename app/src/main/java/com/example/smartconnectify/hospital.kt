@@ -1,3 +1,3 @@
 package com.example.smartconnectify
 
-data class hospital(val Name : String,val Address : String)
+data class hospital(val Name : String,val Address : String,val Sector : String)

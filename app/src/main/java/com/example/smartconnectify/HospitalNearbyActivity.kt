@@ -36,5 +36,11 @@ class HospitalNearbyActivity : AppCompatActivity() {
             openURL.data = Uri.parse("https://goo.gl/maps/ZuBh9uCaqCseuFQT9")
             startActivity(openURL)
         }
+
+        binding.UPHCLoc.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://goo.gl/maps/GKcDuAq5VmL3GXNL6")
+            startActivity(openURL)
+        }
     }
 }

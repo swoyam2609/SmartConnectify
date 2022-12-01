@@ -36,27 +36,6 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_search_hospital"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/ll_topbar_hospital">
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:fontFamily="@font/dmsans_regular"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25sp"
-            android:layout_weight="2"
-            android:background="@drawable/search_bg"
-            android:gravity="center"
-            android:hint="Search"
-            android:textColorHint="#4484FE" />
-
-    </LinearLayout>
-
     <RadioGroup
         android:id="@+id/rgSector"
         android:layout_width="match_parent"
@@ -67,7 +46,7 @@
         android:padding="4dp"
         android:background="@drawable/radio_tab_background"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/ll_search_hospital">
+        app:layout_constraintTop_toBottomOf="@id/ll_topbar_hospital">
 
         <RadioButton
             android:fontFamily="@font/dmsans_medium"
@@ -76,27 +55,13 @@
             android:layout_height="35dp"
             android:layout_weight="0.50"
             android:button="@null"
-            android:checked="false"
+            android:checked="true"
             android:gravity="center"
             android:text="All"
             android:textColor="@drawable/text_color_radio_button"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/rbnearby"
-            android:fontFamily="@font/dmsans_medium"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_weight="0.50"
-            android:background="@drawable/radio_button_selector"
-            android:button="@null"
-            android:checked="true"
-            android:gravity="center"
-            android:text="Nearby"
-            android:textColor="@drawable/text_color_radio_button"
-            android:textSize="16sp"
-            android:textStyle="bold" />
         <RadioButton
             android:id="@+id/rbprivate"
             android:layout_width="0dp"
@@ -125,73 +90,6 @@
             android:textStyle="bold" />
     </RadioGroup>
 
-    <RadioGroup
-        android:id="@+id/rgDistance"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:padding="4dp"
-        android:background="@drawable/radio_tab_background"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/rgSector">
-
-        <RadioButton
-            android:id="@+id/rb5"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:fontFamily="@font/dmsans_medium"
-            android:layout_weight="0.50"
-            android:button="@null"
-            android:checked="false"
-            android:gravity="center"
-            android:text="5 Km"
-            android:textColor="@drawable/text_color_radio_button"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/rb10"
-            android:layout_width="0dp"
-            android:fontFamily="@font/dmsans_medium"
-            android:layout_height="35dp"
-            android:layout_weight="0.50"
-            android:background="@drawable/radio_button_selector"
-            android:button="@null"
-            android:checked="true"
-            android:gravity="center"
-            android:text="10 Km"
-            android:textColor="@drawable/text_color_radio_button"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-        <RadioButton
-            android:id="@+id/rb15"
-            android:layout_width="0dp"
-            android:fontFamily="@font/dmsans_medium"
-            android:layout_height="35dp"
-            android:layout_weight="0.50"
-            android:button="@null"
-            android:checked="false"
-            android:gravity="center"
-            android:text="15 Km"
-            android:textColor="@drawable/text_color_radio_button"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-        <RadioButton
-            android:id="@+id/rb20"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:fontFamily="@font/dmsans_medium"
-            android:layout_weight="0.50"
-            android:button="@null"
-            android:checked="false"
-            android:gravity="center"
-            android:text="20 Km"
-            android:textColor="@drawable/text_color_radio_button"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-    </RadioGroup>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cdh_1"
@@ -199,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:background="@drawable/round_corners_3"
-        app:layout_constraintTop_toBottomOf="@+id/rgDistance"
+        app:layout_constraintTop_toBottomOf="@+id/rgSector"
         android:orientation="horizontal"
         android:paddingStart="15dp"
         android:paddingTop="10dp"
@@ -477,6 +375,80 @@
 
             <ImageView
                 android:id="@+id/sumLoc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/location" />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cdh_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/round_corners_3"
+        app:layout_constraintTop_toBottomOf="@+id/cdh_4"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:src="@drawable/hospital"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="85dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="UPHC Ghatikia"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="Infront of Jaydevbatika, Khandagiri, BBSR"
+                    android:textColor="#686868"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/UPHCLoc"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="50dp"
