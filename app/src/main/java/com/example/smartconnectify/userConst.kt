@@ -33,6 +33,15 @@ object userConst {
         )
         usersArray.add(user3)
 
+        val user4 = user(
+            "Sonia Padhi",
+            "b121065@iiit-bh.ac.in",
+            "+91-7381718720",
+            "26-09-2003",
+            R.drawable.sonia
+        )
+        usersArray.add(user4)
+
         return usersArray
     }
 }

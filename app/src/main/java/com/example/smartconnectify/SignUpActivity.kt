@@ -40,6 +40,7 @@ class SignUpActivity : AppCompatActivity() {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
                         }
+                    }
                 }
             }
         }
