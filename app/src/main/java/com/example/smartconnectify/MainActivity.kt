@@ -38,5 +38,12 @@ class MainActivity : AppCompatActivity() {
             overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
 
         }
+
+        binding.profileIcon.setOnClickListener {
+            val i = Intent(this, ProfileActivity::class.java)
+            startActivity(i)
+            overridePendingTransition(com.google.android.material.R.anim.abc_fade_in, com.google.android.material.R.anim.abc_fade_out)
+
+        }
     }
 }

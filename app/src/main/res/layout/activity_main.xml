@@ -647,6 +647,7 @@
             android:layout_height="match_parent"/>
 
         <ImageView
+            android:id="@+id/profileIcon"
             android:layout_width="0sp"
             android:layout_weight="1"
             android:src="@drawable/profile_icon"

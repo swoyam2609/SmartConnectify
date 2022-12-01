@@ -3,7 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/splash_screen_background">
+
+
+    <!--    Navigation Bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:orientation="horizontal"
+        android:paddingStart="30sp"
+        android:paddingTop="15sp"
+        android:paddingEnd="30sp"
+        android:paddingBottom="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bottom_navigationbar_bg">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:src="@drawable/home_icon"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/careIcon"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:src="@drawable/care_icon"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="0sp"
+            android:layout_weight="1.5"
+            android:src="@drawable/home_icon_large"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/communityIcon"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:src="@drawable/community_icon"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_topbar_profile"
@@ -367,6 +414,7 @@
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

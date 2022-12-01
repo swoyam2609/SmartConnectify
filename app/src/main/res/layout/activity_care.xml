@@ -84,6 +84,7 @@
             android:src="@drawable/care_icon_large_two" />
 
         <ImageView
+            android:id="@+id/profileIcon"
             android:layout_width="0sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
